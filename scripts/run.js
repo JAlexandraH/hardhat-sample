@@ -13,8 +13,3 @@ const runMain = async () => {
 };
 
 runMain();
-
-const rsvpContractFactory = await hre.ethers.getContractFactory("Web3RSVP");
-const rsvpContract = await rsvpContractFactory.deploy();
-await rsvpContract.deployed();
-console.log("Contract deployed to:", rsvpContract.address);
